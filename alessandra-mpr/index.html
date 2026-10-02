@@ -416,6 +416,26 @@ section { padding: 110px 0; }
 .bio-proof-label { font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; color: var(--text-mid); line-height: 1.55; }
 
 /* ═══════════════════════════════════════
+   DEPOIMENTOS (branco)
+═══════════════════════════════════════ */
+.testi-section { background: var(--white); text-align: center; }
+.testi-section .section-label { justify-content: center; }
+.testi-section .section-label::after { display: none; }
+.testi-section .section-label::before { content: ''; display: inline-block; width: 48px; height: 1px; background: var(--gold); opacity: 0.5; margin-right: 12px; }
+.testi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 50px; background: rgba(13,31,53,0.08); text-align: left; }
+.testi-card { background: var(--cream); padding: 44px 40px; display: flex; flex-direction: column; border-top: 2px solid var(--gold); }
+.testi-quote { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; font-weight: 500; color: var(--text-mid); line-height: 1.7; margin-bottom: 30px; }
+.testi-quote p + p { margin-top: 14px; }
+.testi-author { display: flex; align-items: center; gap: 16px; margin-top: auto; }
+.testi-photo { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 1px solid var(--gold); flex-shrink: 0; }
+.testi-name { font-family: 'Jost', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--navy); }
+@media (max-width: 768px) {
+  .testi-grid { grid-template-columns: 1fr; }
+  .testi-card { padding: 34px 26px; }
+  .testi-quote { font-size: 18px; }
+}
+
+/* ═══════════════════════════════════════
    SEÇÃO 8: COMO FUNCIONA A NOITE (navy)
 ═══════════════════════════════════════ */
 .how-section { background: var(--navy); }
@@ -1072,6 +1092,39 @@ body.wa-lift .wa-float { bottom: 78px; }
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     DEPOIMENTOS
+══════════════════════════════════════ -->
+<section class="testi-section" aria-label="Depoimentos">
+  <div class="container">
+    <span class="section-label">Prova real</span>
+    <h2 class="section-title">O que dizem as mulheres <em>que já reinam</em></h2>
+
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-quote">
+          <p>“Com a Alessandra, aprendi a viver com clareza. Aprendi a viver devagar, uma etapa de cada vez, e com maior alinhamento na vida profissional, espiritual e na vida junto com a minha família.</p>
+          <p>Também aprendi que prosperar não é somente o crescer por fora. Prosperar é tudo aquilo que Deus coloca dentro de você, e você transparece em tudo aquilo que faz.”</p>
+        </div>
+        <div class="testi-author">
+          <img class="testi-photo" src="./depoimentos/maryana-piermann.webp" alt="Maryana Piermann" loading="lazy" />
+          <div class="testi-name">Maryana Piermann</div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-quote">
+          <p>“Com o método MPR da Alessandra, eu me encontrei. Estava em um vazio, cavando fundo no poço. Não sabia onde estava a luz, e me encontrei. Ela lançou a corda, e eu peguei para escalar.</p>
+          <p>Foi uma revolução de dentro para fora. E quem tiver interesse, faça um favor a si mesmo, porque vale a pena o que vocês estão se dando.”</p>
+        </div>
+        <div class="testi-author">
+          <img class="testi-photo" src="./depoimentos/emilia-dos-anjos.webp" alt="Emilia dos Anjos" loading="lazy" />
+          <div class="testi-name">Emilia dos Anjos</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

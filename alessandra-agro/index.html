@@ -239,9 +239,12 @@ section { padding: 110px 0; }
 .testi-section .section-label::before { content:''; display:inline-block; width:48px; height:1px; background:var(--gold); opacity:.5; margin-right:12px }
 .testi-section .section-title { color: var(--white); }
 .testi-sub { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: rgba(255,255,255,.45); margin-bottom: 50px; }
-.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: rgba(255,255,255,.06); text-align: left; }
-.testi-card { background: var(--navy-mid); padding: 34px 30px; }
-.testi-quote { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: rgba(255,255,255,.8); line-height: 1.65; margin-bottom: 22px; min-height: 90px; }
+.testi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; background: rgba(255,255,255,.06); text-align: left; }
+.testi-card { background: var(--navy-mid); padding: 44px 40px; display: flex; flex-direction: column; }
+.testi-quote { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; color: rgba(255,255,255,.85); line-height: 1.7; margin-bottom: 30px; }
+.testi-quote p + p { margin-top: 14px; }
+.testi-author { display: flex; align-items: center; gap: 16px; margin-top: auto; }
+.testi-photo { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 1px solid var(--gold); flex-shrink: 0; }
 .testi-name { font-family: 'Jost', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-light); }
 
 /* ═══════════════════════════════════════
@@ -655,20 +658,26 @@ body.wa-lift .wa-float { bottom: 78px; }
   <div class="container">
     <span class="section-label">Prova real</span>
     <h2 class="section-title">O que dizem as mulheres <em>que já reinam</em></h2>
-    <p class="testi-sub">espaço reservado para depoimentos reais</p>
-
-    <div class="testi-grid">
+    <div class="testi-grid" style="margin-top:50px">
       <div class="testi-card reveal">
-        <p class="testi-quote"><span class="todo">[colar aqui o depoimento real nº1]</span></p>
-        <div class="testi-name">Nome da cliente</div>
+        <div class="testi-quote">
+          <p>“Com a Alessandra, aprendi a viver com clareza. Aprendi a viver devagar, uma etapa de cada vez, e com maior alinhamento na vida profissional, espiritual e na vida junto com a minha família.</p>
+          <p>Também aprendi que prosperar não é somente o crescer por fora. Prosperar é tudo aquilo que Deus coloca dentro de você, e você transparece em tudo aquilo que faz.”</p>
+        </div>
+        <div class="testi-author">
+          <img class="testi-photo" src="./depoimentos/maryana-piermann.webp" alt="Maryana Piermann" loading="lazy" />
+          <div class="testi-name">Maryana Piermann</div>
+        </div>
       </div>
       <div class="testi-card reveal">
-        <p class="testi-quote"><span class="todo">[colar aqui o depoimento real nº2]</span></p>
-        <div class="testi-name">Nome da cliente</div>
-      </div>
-      <div class="testi-card reveal">
-        <p class="testi-quote"><span class="todo">[colar aqui o depoimento real nº3]</span></p>
-        <div class="testi-name">Nome da cliente</div>
+        <div class="testi-quote">
+          <p>“Com o método MPR da Alessandra, eu me encontrei. Estava em um vazio, cavando fundo no poço. Não sabia onde estava a luz, e me encontrei. Ela lançou a corda, e eu peguei para escalar.</p>
+          <p>Foi uma revolução de dentro para fora. E quem tiver interesse, faça um favor a si mesmo, porque vale a pena o que vocês estão se dando.”</p>
+        </div>
+        <div class="testi-author">
+          <img class="testi-photo" src="./depoimentos/emilia-dos-anjos.webp" alt="Emilia dos Anjos" loading="lazy" />
+          <div class="testi-name">Emilia dos Anjos</div>
+        </div>
       </div>
     </div>
   </div>
